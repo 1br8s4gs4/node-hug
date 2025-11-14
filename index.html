@@ -4,40 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Apache HTTP Server Test Page</title>
+    <title>Protect the Environment</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #eef2f3;
             color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2196F3);
+            color: white;
+            padding: 20px;
             text-align: center;
-            padding: 50px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
-        h1 {
-            color: #d9534f;
+
+        .section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        p {
-            font-size: 1.2em;
+
+        .section h2 {
+            font-size: 28px;
+            color: #333;
         }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .forest, .ocean {
+            width: 100%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 8px;
+        }
+
+        .forest {
+            background-image: url('https://via.placeholder.com/1200x600/4CAF50/FFFFFF?text=Forest');
+        }
+
+        .ocean {
+            background-image: url('https://via.placeholder.com/1200x600/2196F3/FFFFFF?text=Ocean');
+        }
+
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .article {
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+        }
+
+        .article h3 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .article p {
+            font-size: 16px;
             color: #777;
+        }
+
+        footer {
+            background: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
 
-    <h1>It works!</h1>
-    <p>This is the default Apache HTTP Server test page. It works!</p>
+    <header>
+        Protect Our Environment
+    </header>
 
-    <p>If you see this page, it means that the Apache web server is successfully installed and configured on this server.</p>
-
-    <p>For more information, please refer to the <a href="https://httpd.apache.org/">Apache HTTP Server Documentation</a>.</p>
-
-    <div class="footer">
-        <p>Powered by Apache HTTP Server.</p>
+    <div class="section forest">
+        <div style="text-align: center; color: white; padding-top: 120px;">
+            <h2>Preserve the Forest</h2>
+            <p>Forests are vital to our planet’s health. They are home to countless species and play an essential role in combating climate change.</p>
+        </div>
     </div>
+
+    <div class="section ocean">
+        <div style="text-align: center; color: white; padding-top: 120px;">
+            <h2>Save the Ocean</h2>
+            <p>The ocean is crucial to life on Earth. It regulates climate, provides oxygen, and sustains a diverse range of marine species.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Articles on Environmental Protection</h2>
+        <div class="articles">
+            <div class="article">
+                <h3>Forest Conservation: Our Responsibility</h3>
+                <p>We must take immediate action to conserve forests. Deforestation leads to habitat loss, increased carbon emissions, and biodiversity decline. By planting trees and protecting forests, we can mitigate climate change.</p>
+            </div>
+            <div class="article">
+                <h3>Combatting Plastic Pollution</h3>
+                <p>Plastic pollution is a global crisis affecting both land and sea. We must reduce plastic consumption, recycle more, and clean up plastic waste from our oceans.</p>
+            </div>
+            <div class="article">
+                <h3>Renewable Energy for a Greener Future</h3>
+                <p>Renewable energy is the key to reducing carbon emissions and fighting climate change. Solar, wind, and hydropower are clean alternatives to fossil fuels.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Protect the Environment. All rights reserved.
+    </footer>
+
+    <script>
+        // Simple animation for articles hover effect
+        document.querySelectorAll('.article').forEach(function(article) {
+            article.addEventListener('mouseenter', function() {
+                article.style.transform = 'scale(1.05)';
+            });
+            article.addEventListener('mouseleave', function() {
+                article.style.transform = 'scale(1)';
+            });
+        });
+    </script>
 
 </body>
 </html>
