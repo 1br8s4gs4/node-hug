@@ -4,86 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Explore the Universe</title>
+    <title>Apache HTTP Server Test Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
             text-align: center;
+            padding: 50px;
         }
-        header {
-            background-color: #222;
-            padding: 20px;
+        h1 {
+            color: #d9534f;
         }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #00d4ff;
-        }
-        .content {
-            padding: 40px 20px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .image-container img {
-            width: 250px;
-            height: 150px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        .description {
+        p {
             font-size: 1.2em;
-            margin-top: 30px;
-            line-height: 1.6;
         }
-        .button {
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: #00d4ff;
-            color: #000;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #009b9e;
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Explore the Universe</h1>
-    </header>
+    <h1>It works!</h1>
+    <p>This is the default Apache HTTP Server test page. It works!</p>
 
-    <div class="content">
-        <p class="description">
-            The universe is a vast and mysterious place. From distant galaxies to tiny particles of stardust, every star and planet has its own unique story.
-            Humanity has long been striving to explore the secrets of the universe, understanding its origins, structure, and our place within it.
-        </p>
+    <p>If you see this page, it means that the Apache web server is successfully installed and configured on this server.</p>
 
-        <div class="image-container">
-            <img src="https://via.placeholder.com/250x150/000000/FFFFFF?text=Galaxy" alt="Galaxy">
-            <img src="https://via.placeholder.com/250x150/000000/FFFFFF?text=Planet" alt="Planet">
-            <img src="https://via.placeholder.com/250x150/000000/FFFFFF?text=Black Hole" alt="Black Hole">
-        </div>
+    <p>For more information, please refer to the <a href="https://httpd.apache.org/">Apache HTTP Server Documentation</a>.</p>
 
-        <p class="description">
-            Exploring the universe is not only the frontier of science but also humanity's eternal dream. From the Hubble Space Telescope to space probes, each advancement brings new discoveries.
-            On this page, you will see some fascinating images and resources about the universe. Come and learn more!
-        </p>
-
-        <a href="https://www.nasa.gov" target="_blank">
-            <button class="button">More Universe Exploration</button>
-        </a>
+    <div class="footer">
+        <p>Powered by Apache HTTP Server.</p>
     </div>
 
 </body>
